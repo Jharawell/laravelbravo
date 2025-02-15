@@ -9,3 +9,5 @@ Route::get('/hello', function() {
 });
 
 Route::get('/greet', [GreetController::class, 'greetMethod']);
+
+Route::resource('tasks', TasksController::class);
